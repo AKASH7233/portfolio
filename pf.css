@@ -1,0 +1,108 @@
+body{
+    background-color:#1f242d;
+    max-height: 300px;
+}
+*{ margin: 0;
+    padding: 0;
+    font-family:poppins ;
+}
+.port{
+    margin-left: 8%;
+    color:white;
+    margin-top:1vw;
+    padding:0 20px;
+    font-weight: 700;
+    font-size: 35px;
+}
+.navbar{
+    display:inline;
+    float: right;
+    font-weight: 600;
+    margin-top: -28px;
+    margin-right: 5vw;
+    word-spacing: 35px;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    text-shadow: 0 0 30px aqua;
+    transition: 0.1s;
+    background-color:#1f242d;
+    color:aqua;
+}
+.section{
+
+    max-width: 100%;
+    margin: 10%;
+}
+.left{
+    float:left;
+    width:50%;
+}
+.img{
+    float:right;
+    width:50%;
+}
+h3{font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:white;
+}
+h2{
+    font: height 30px;
+    font-weight: 700;
+    font-size: 4vw;
+    letter-spacing: 1.5px;
+    color:white;
+}
+h4{ 
+    font-height:30px;
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:white;
+}
+span{
+    color:aqua;
+}
+.social{
+    padding:20px 0;
+    font-size: 20px;
+    word-spacing: 20px;
+
+}
+.social a{
+    border-radius: 50%;
+    color:aqua;
+    border:1px solid aqua; 
+    padding:5px;
+}
+.social a:hover{
+    box-shadow: 0 0 30px aqua;
+    transition: 0.3s;
+    color:#1f242d;
+    background-color: aqua;
+}
+.Download{
+    margin: 15px 0;
+    letter-spacing: 1px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    display:inline-block;
+    background-color: aqua;
+    color:black;
+    font-weight: 700;
+    border: aqua;
+    box-shadow: 0 0 30px aqua;
+    text-decoration: none;
+}
+img ,img{
+    padding: 0 100px;
+    width:30vw;
+    height: 20vw;
+}
