@@ -6,6 +6,9 @@ body{
     padding: 0;
     font-family:poppins ;
 }
+left::marker{
+    color:aqua;
+}
 .port{
     margin-left: 8%;
     color:white;
@@ -17,8 +20,9 @@ body{
 .navbar{
     display:inline;
     float: right;
+    font-size:1.3vw;
     font-weight: 600;
-    margin-top: -28px;
+    margin-top: -2.5vw;
     margin-right: 5vw;
     word-spacing: 35px;
 }
@@ -71,7 +75,7 @@ span{
 }
 .social{
     padding:20px 0;
-    font-size: 20px;
+    font-size: 2vw;
     word-spacing: 20px;
 
 }
@@ -90,7 +94,7 @@ span{
 .Download{
     margin: 15px 0;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 2vw;
     border-radius: 20px;
     padding: 10px 10px;
     display:inline-block;
@@ -106,3 +110,13 @@ img ,img{
     width:30vw;
     height: 20vw;
 }
+/*
+@media  screen and (max-width:500px) {
+    .navbar,.left,.img{
+        float:none;
+    }   
+    .navbar{
+        display:block;
+    }
+}
+*/
