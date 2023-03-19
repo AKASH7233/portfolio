@@ -9,22 +9,22 @@ body{
 left::marker{
     color:aqua;
 }
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
 .port{
-    margin-left: 8%;
-    color:white;
-    margin-top:1vw;
-    padding:0 20px;
-    font-weight: 700;
-    font-size: 35px;
+    margin-left: 10%;
+}
+h1{
+    font-size: 20px;
+    color: white;
 }
 .navbar{
-    display:inline;
-    float: right;
-    font-size:1.3vw;
-    font-weight: 600;
-    margin-top: -2.5vw;
-    margin-right: 5vw;
-    word-spacing: 35px;
+   margin-right: 5%;
+   word-spacing: 2vw;
+   font-weight: 700;
 }
 .navbar a{
     text-decoration: none;
@@ -38,6 +38,10 @@ left::marker{
     background-color:#1f242d;
     color:aqua;
 }
+
+#menu{
+    display: none;
+}
 .section{
 
     max-width: 100%;
@@ -46,6 +50,10 @@ left::marker{
 .left{
     float:left;
     width:50%;
+}
+
+.dropdown{
+    display: none;
 }
 .img{
     float:right;
@@ -64,7 +72,7 @@ h2{
     color:white;
 }
 h4{ 
-    font-height:30px;
+    font:height 30px;
     font-size: 2vw;
     font-weight: 600;
     letter-spacing: 1px;
@@ -110,13 +118,83 @@ img ,img{
     width:30vw;
     height: 20vw;
 }
-/*
+
 @media  screen and (max-width:500px) {
-    .navbar,.left,.img{
-        float:none;
-    }   
-    .navbar{
-        display:block;
+    body{
+        max-width:400px;
     }
+    *{margin: 0;
+      padding: 0;
 }
-*/
+     h1{
+        font-size: 30px;
+        left:30%;
+        position :absolute;
+       }
+       .section{
+        margin: 0;
+       }
+       .navbar {
+        display: none;
+        }
+        #menu{
+            position: relative;
+            padding: 12px;
+            left:0%;
+            display:block;
+        }
+        .dropdown{
+            margin: 10px;
+            margin-left: 20px;
+            text-align: center;
+            border: 2px solid aqua;
+            
+        }
+        .dropdown a{
+           /* display: none;*/
+           display: block;
+           width: 300px;
+           color: aqua;
+           font-weight: 700;
+           padding: 4px 0;
+           text-decoration: none;
+           background-color:transparent;
+           border: 1px solid aqua;
+           transition: 0.3s;
+        }
+        #menu:hover{
+            left:0%;
+        }
+        #menu:hover .dropdown{
+            display: block;
+        }
+        a:hover, a.active{
+            box-shadow: 0 0 10px aqua;
+            color:#1f242d;
+            background-color: aqua;
+        }
+        .left{
+            margin:10%;
+        }
+        .left , .img{
+            float:none;
+            width:100%;
+        }
+        h3, h4, .social{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 30px;
+        }
+       
+        .Download{
+            font-size: 15px;
+        }
+        img{
+            padding: 0;
+            width:100%;
+            height: 200px;
+            margin: 10%;
+            margin-bottom: 0;
+        }
+    }
