@@ -1,0 +1,105 @@
+body{
+    background-color:#1f242d;
+    max-height: 300px;
+}
+*{ margin: 0;
+    padding: 0;
+    font-family:poppins ;
+}
+left::marker{
+    color:aqua;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.port{
+    margin-left: 10%;
+}
+h1{
+    font-size: 20px;
+    color: white;
+}
+.navbar{
+   margin-right: 5%;
+   word-spacing: 2vw;
+   font-weight: 700;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    text-shadow: 0 0 30px aqua;
+    transition: 0.1s;
+    background-color:#1f242d;
+    color:aqua;
+}
+
+#menu{
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+@media  screen and (max-width:500px) {
+    body{
+        max-width:400px;
+    }
+    *{margin: 0;
+      padding: 0;
+}
+     h1{
+        font-size: 30px;
+        left:30%;
+        position :absolute;
+       }
+       .section{
+        margin: 0;
+       }
+       .navbar {
+        display: none;
+        }
+        #menu{
+            position: relative;
+            padding: 12px;
+            left:0%;
+            display:block;
+        }
+        .dropdown{
+            margin: 10px;
+            margin-left: 20px;
+            text-align: center;
+            border: 2px solid aqua;
+            
+        }
+        .dropdown a{
+           /* display: none;*/
+           display: block;
+           width: 300px;
+           color: aqua;
+           font-weight: 700;
+           padding: 4px 0;
+           text-decoration: none;
+           background-color:transparent;
+           border: 1px solid aqua;
+           transition: 0.3s;
+        }
+        #menu:hover{
+            left:0%;
+        }
+        #menu:hover .dropdown{
+            display: block;
+        }
+        a:hover, a.active{
+            box-shadow: 0 0 10px aqua;
+            color:#1f242d;
+            font-weight: 600;
+            background-color: aqua;
+            
+            
+        }
+    }
