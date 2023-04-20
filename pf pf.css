@@ -75,6 +75,13 @@
         float:none;
         width:100%;
     }
+    .content{
+        margin-left: 5px;
+    }
+    .leftcontent,.rightcontent,.centercontent{
+        margin-top: 10px;
+    
+    }
     .main{
         margin-top: 150px;
     }
@@ -91,7 +98,9 @@
         font-size: 1.4em;
         margin-top: 10px;
     }
-
+.right{
+    width: 100%;
+}
     .contact h5{
         margin-top: -500px;
         margin-bottom: 0;
