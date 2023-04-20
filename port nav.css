@@ -1,42 +1,72 @@
 body{
     background-color:#1f242d;
     max-height: 300px;
+    cursor:default;
 }
 *{ margin: 0;
     padding: 0;
-    font-family:poppins ;
+    font-family:poppins;
 }
 left::marker{
     color:aqua;
 }
+header{
+    background-color:#323946;
+    border-radius: 10px;
+    margin-top: -10vw;
+    height: 4em;;
+    width:100%;
+    z-index: 1;
+    position:fixed;
+    
+}
 .header{
+    position: fixed;
+    top:20px;
+    margin-bottom: 1vw;
     display:flex;
     justify-content: space-between;
-    margin-top: 10px;
+    background-color:#323946;
 }
 .port{
+    animation: ease-in;
+    animation-name: logo;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1; 
+
+   position: fixed; 
     margin-left: 10%;
+    
 }
 h1{
     font-size: 20px;
     color: white;
 }
-.navbar{
-   margin-right: 5%;
-   word-spacing: 2vw;
-   font-weight: 700;
+.navbar{ 
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-name: navbar;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+   position: fixed;
+   right:0;
+  
 }
 .navbar a{
+    padding: 10px;
+    border:1px solid;
+    border-radius:20px;
+    border:none;
+    margin-left:10px;
+    font-weight: 600;
     text-decoration: none;
     color:white;
 }
 .navbar a:hover,
 .navbar a.active
-{
-    text-shadow: 0 0 30px aqua;
+{ box-shadow: 0 0 30px aqua;
     transition: 0.1s;
-    background-color:#1f242d;
-    color:aqua;
+    background-color:aqua;
+    color:#1f242d;
 }
 
 #menu{
@@ -44,6 +74,29 @@ h1{
 }
 .dropdown{
     display: none;
+} 
+@keyframes logo{
+    0%{
+     transform: translateX(-100px);
+    }
+    100%{
+        transform:translateX(0) ;
+    }
+}
+@keyframes navbar{
+    0%{
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@media  screen and (max-width:700px) {
+
+    .port{
+        margin-left: 0.3vw;
+    }
+    
 }
 @media  screen and (max-width:500px) {
     body{
@@ -55,7 +108,8 @@ h1{
      h1{
         font-size: 30px;
         left:30%;
-        position :absolute;
+        margin:-10px;
+        position :fixed;
        }
        .section{
         margin: 0;
@@ -64,9 +118,8 @@ h1{
         display: none;
         }
         #menu{
-            position: relative;
-            padding: 12px;
-            left:0%;
+            padding: 0.1em;
+            position: fixed;
             display:block;
         }
         .dropdown{
@@ -74,6 +127,7 @@ h1{
             margin-left: 20px;
             text-align: center;
             border: 2px solid aqua;
+            background-color: #323946;
             
         }
         .dropdown a{

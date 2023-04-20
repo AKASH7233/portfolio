@@ -1,0 +1,35 @@
+.aboutcontainer{
+width: 100%;
+margin-top: 10%;
+}
+.aboutme{
+    width: 56%;
+    float: right;
+    margin-right:35px;
+}
+.pic{
+    width: 30%;
+    float: left;
+}
+h6{
+    font-size: 40px;
+    color:white;
+}
+p2{
+    color: white;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+p3{
+    line-height: 30px;
+    color:white;
+    word-break: keep-all;
+}
+.aboutme a{
+    color:black;
+    background-color: aqua;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 800;
+}

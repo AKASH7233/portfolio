@@ -1,0 +1,101 @@
+.progess{
+    margin-top: 35px;
+    width: 100%;
+    
+}
+.codingskill{
+    width: 43%;
+    float: left;
+    margin-left:100px;
+}
+.professionalskill{
+    width: 45%;
+    margin-right: 10px;
+    float: right;
+}
+.pro{
+    box-shadow: 0 0 3px aqua;
+    padding: 10px ;
+    margin-top: 15px;
+}
+.pro:hover{
+    transition: 0.3s;
+    transform: scale(1.01);
+}
+.pro p{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.bar{
+    display: block;
+    margin-bottom:10px;
+    height: 10px;
+    background-color:aqua;
+}
+#bar1{
+    width: 97%;
+}
+
+#bar2, #bar8{
+    width: 95%;
+}
+
+#bar3, #bar5{
+    width: 93%;
+}
+
+#bar4, #bar6{
+    width: 90%;
+}
+
+#bar7{
+    width: 94%;
+}
+@media screen and (max-width:600px)  {
+    h5{
+        font-size: 40px;
+    }
+    
+    .codingskill, .professionalskill{
+        float: none;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .progess{
+        margin-bottom: 0;
+    }
+    .contact{
+        margin-top:0;
+    }
+}
+@media screen and (max-width:500px) {
+    .pic, .aboutme{
+        float:none;
+        width:100%;
+    }
+    .main{
+        margin-top: 150px;
+    }
+    .aboutme a{
+        margin-left: 40%;
+    }
+    h5{
+        margin-left: 20%;
+    }
+    .aboutme{
+        margin: 10px;
+    }
+    .skills h6{
+        font-size: 1.4em;
+        margin-top: 10px;
+    }
+
+    .contact h5{
+        margin-top: -500px;
+        margin-bottom: 0;
+        margin-left: 10%;
+    }
+    }
+    

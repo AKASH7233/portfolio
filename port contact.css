@@ -1,5 +1,7 @@
 
-h2{
+h5{
+    color:white;
+    font-size: 50px;
     font-weight: 600;
     margin-top:5%;
     text-align:center;
@@ -66,6 +68,10 @@ a.submit{
 }
 
 @media screen and (max-width:550px){
+    form{
+        margin-left: auto;
+        margin-right: auto;
+    }
     input{
         width:100%;
     }

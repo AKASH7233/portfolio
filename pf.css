@@ -1,29 +1,59 @@
+.home{
+    width:100%;
+    height: 100vh;
+}
+.contact,.main,.about, .skills{
+    width:100%;
+    height:100vh;
+}
 .section{
-
+    animation: ease;
+    animation-duration: 2s;
+    animation-name: main;
+    animation-iteration-count: 1;
     max-width: 100%;
     margin: 10%;
 }
+.hide{
+    visibility: hidden;
+}
 .left{
+    margin-top: 4em;
     float:left;
     width:50%;
 }
-.img{
+.img, .pic{
+    animation: ease-in-out;
+    animation-name: image;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
     float:right;
     width:50%;
 }
-h3{font-size: 2vw;
+h3{
+    animation: ease;
+    animation-name:first;
+    animation-duration:1.5s;
+    font-size: 2vw;
     font-weight: 600;
     letter-spacing: 1px;
     color:white;
 }
 h2{
+    animation: ease;
+    animation-name:second;
+    animation-duration:2s;
     font: height 30px;
     font-weight: 700;
     font-size: 4vw;
     letter-spacing: 1.5px;
     color:white;
 }
-h4{ 
+h4{
+    animation: ease;
+    animation-name:third;
+    animation-duration:2.5s;
     font:height 30px;
     font-size: 2vw;
     font-weight: 600;
@@ -34,6 +64,9 @@ span{
     color:aqua;
 }
 .social{
+    animation: ease;
+    animation-name:social;
+    animation-duration:3.5s;
     padding:20px 0;
     font-size: 2vw;
     word-spacing: 20px;
@@ -45,13 +78,16 @@ span{
     border:1px solid aqua; 
     padding:5px;
 }
-.social a:hover{
+.social a:hover, .Download:hover,.about a:hover{
     box-shadow: 0 0 30px aqua;
     transition: 0.3s;
     color:#1f242d;
     background-color: aqua;
 }
 .Download{
+    animation: ease;
+    animation-name:download;
+    animation-duration:4s;
     margin: 15px 0;
     letter-spacing: 1px;
     font-size: 2vw;
@@ -62,7 +98,6 @@ span{
     color:black;
     font-weight: 700;
     border: aqua;
-    box-shadow: 0 0 30px aqua;
     text-decoration: none;
 }
 img ,img{
@@ -70,8 +105,71 @@ img ,img{
     width:30vw;
     height: 20vw;
 }
+@keyframes image{
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes first{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes second{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes third{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes social{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
 
-@media  screen and (max-width:500px) {
+@keyframes download{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform:translateY(0%)
+    }
+}
+@keyframes image{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@media  screen and (max-width:700px) {
     
         .left{
             margin:10%;
@@ -80,11 +178,21 @@ img ,img{
             float:none;
             width:100%;
         }
-        h3, h4, .social{
+        h3, .total, .social{
             font-size: 20px;
         }
-        h2{
+        h2, #and{
             font-size: 30px;
+        }
+        .opt{
+            font-size: 30px;
+        }
+        .type{
+            margin-top:-8px;
+            line-height: 30px;
+            height: 30px;
+            width: 170px;
+            
         }
        
         .Download{
@@ -94,7 +202,26 @@ img ,img{
             padding: 0;
             width:100%;
             height: 200px;
-            margin: 10%;
+           margin-top: 40px;
             margin-bottom: 0;
         }
+        
+@keyframes slide {
+    0%{
+        top:0px;
+    }
+    25%{
+        top: -30px;
+    }
+    50%{
+        top:-60px;
+    }
+    75%{
+        top:-90px;
+    }
+    100%{
+        top:-120px;
+    }
+    
+}
     }

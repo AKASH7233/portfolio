@@ -3,47 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="300s">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="pf.css">
     <link rel="stylesheet" href="port nav.css">
+    <link rel="stylesheet" href="pf.css">
+    <link rel="stylesheet" href="pf About.css">
+    <link rel="stylesheet" href="port contact.css">
+    <link rel="stylesheet" href="pf pf.css">
+    <link rel="stylesheet" href="pf Services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>AY's Portfolio</title>
 </head>
 <body>
-    
-    <header>
-        <div class="header">
+<!--code for Home Page-->
+    <div class="home">
+            <header>
+        <div class="header"> 
             
+<!--code for @media navigation bar-->
            <span id="menu">
             <box-icon name='menu' color="white" size="50x"></box-icon>
             <div class="dropdown">
-             <a href="index.html" class="active">Home</a>
-             <a href="#">About</a>
-             <a href="#">Skills</a>
-             <a href="#">Portfolio</a>
-             <a href="port contact.html">Contact</a>
+             <a href="portfolio.html" >Home</a>
+             <a href="#About">About</a>
+             <a href="#Services">Services</a>
+             <a href="#skills">Skills</a>
+             <a href="#contact">Contact</a>
             </div>
      
          </span>
+         
+<!--code for navigation bar-->
         <div class="port">
             <h1>Portfolio.</h1>
         </div>  
         <span class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Portfolio</a>
-            <a href="port contact.html">Contact</a></span>
+            <a href="portfolio.html" >Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a></span>
         </div>
         
-    
+        <div class="hide">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, deleniti ullam minima<br> expedita laboriosam quas error adipisci.
+                 Quae natus eos est suscipit officiis, consectetur ad vel vero aliquid ratione ipsum!</p>
+        </div>
     
     </header>
-    <section>
         <div class="section">
             <div class="img">
                 <img src="mask.jpg">
@@ -51,18 +62,147 @@
         <div class="left">
             <h3>Hello, It's Me</h3>
             <h2>Akash Yadav</h2>
-            <h4>And I'm a <span>Frontend Developer</span></h4>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
             <p></p>
             <div class="social">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
                 <a href="#"><i class='bx bxl-twitter' ></i></a>
                 <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.linkedin.com/in/akash-yadav-866136256"><i class='bx bxl-linkedin' ></i></a>
             </div>
             <a href="#" class="Download" download="#">Download CV</a>
         </div>
         </div>
     </section>
+</div>
+
+<!--code for About page-->
+<div class="about">
+    <div class="hide" id="About">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, deleniti ullam minima<br> expedita laboriosam quas error adipisci.
+             Quae natus eos est suscipit officiis, consectetur ad vel vero aliquid ratione ipsum!</p>
+    </div>
+    <div class="aboutcontainer">
+    <div class="pic">
+<img src="mask.jpg" alt="mypic">
+    </div>
+    <div class="aboutme">
+<h6>About<span> Me</span></h6>
+<p2>Frontend Developer</p2>
+<br>
+<br>
+<p3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ab dolorum temporibus cumque? Explicabo quae nobis commodi autem voluptate ullam earum saepe placeat in sint facilis molestias, dignissimos dolorem harum ut deserunt ea atque iusto adipisci. In animi excepturi nihil ipsa voluptatum nemo laborum est? Harum ipsum aspernatur placeat rem!</p3>
+<br>
+<br>
+<a href="#">Read More</a>
+    </div>
+    </div>
+</div>
+
+<!--Code for service segment-->
+    <div class="main">
+    <div class="hide" id="Services">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, deleniti ullam minima</p>
+    </div>
+    <h5>Our <span>Services</span></h5>
+    <div class="content">
+    <div class="leftcontent">
+        <box-icon name='code-alt' color=aqua  size=60px text-align=center></box-icon>
+        <p class="heading">
+            Web Development
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perspiciatis excepturi laboriosam inventore, et tempora sunt repellat, odio recusandae harum corporis deleniti ratione expedita commodi. Delectus sunt quaerat obcaecati nobis.</p>
+        <br>
+        <a href="#">Read More</a>
+    </div>
+    <div class="centercontent">
+        <box-icon name='pen' color=aqua  size=60px></box-icon>
+        <p class="heading">
+            Graphic Designer
+       </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perspiciatis excepturi laboriosam inventore, et tempora sunt repellat, odio recusandae harum corporis deleniti ratione expedita commodi. Delectus sunt quaerat obcaecati nobis.</p>
+        <br>
+        <a href="#">Read More</a>
+    </div>
+    <div class="rightcontent">
+        <box-icon name='youtube' type='logo' color=aqua  size=60px ></box-icon>
+        <p class="heading">
+            Youtuber
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perspiciatis excepturi laboriosam inventore, et tempora sunt repellat, odio recusandae harum corporis deleniti ratione expedita commodi. Delectus sunt quaerat obcaecati nobis.</p>
+        <br>
+        <a href="#">Read More</a>
+    </div>
+    
+    </div>
+
+
+</div>
+
+<!--code for skills page-->
+<div class="skills">
+    <div class="hide" id="skills">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, deleniti ullam minima<br> expedita laboriosam quas error adipisci.
+             Quae natus eos est suscipit officiis, consectetur ad vel vero aliquid ratione ipsum!</p>
+    </div>   
+    <h5>My <span>Skills</span></h5>
+    <div class="progess">
+    <div class="codingskill">
+<h6>Coding Skills</h6>
+<div class="pro">
+    <p>HTML <span>97%</span></p>
+    <div class="bar" id="bar1"></div>
+    <p>CSS <span>95%</span></p>
+    <div class="bar" id="bar2"></div>
+    <p>JAVASCRIPT <span>93%</span></p>
+    <div class="bar" id="bar3"></div>
+    <p>Python <span>90%</span></p>
+    <div class="bar" id="bar4"></div>
+
+</div>
+</div>
+    <div class="professionalskill">
+        <h6>Professional Skills</h6>
+<div class="pro">
+    <p>Frontend Development<span>93%</span></p>
+    <div class="bar" id="bar5"></div>
+    <p>Web Application <span>90%</span></p>
+    <div class="bar" id="bar6"></div>
+    <p>Backend Development <span>94%</span></p>
+    <div class="bar" id="bar7"></div>
+    <p>Ethical Hacking<span>95%</span></p>
+    <div class="bar" id="bar8"></div>
+
+    </div>
+</div>
+   </div>
+
+<!--code for contact page-->
+<div class="contact">
+    <div class="hide" >
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, deleniti ullam minima<br> expedita laboriosam quas error adipisci.
+             Quae natus eos est suscipit officiis, consectetur ad vel vero aliquid ratione ipsum!</p>
+    </div>
+    <section>
+            <h5 id="contact">Contact <span>Me!</span></h5> 
+    
+        <form action="#" autocomplete="off">
+            <div class="first">
+            <input type="text" name="fname" placeholder="Full Name" class="name" required>
+            <input type="email" name="email" placeholder="Email Address" class="email" required>
+        </div>
+            <div class="Second">
+            <input type="tel" name="fname" placeholder="Mobile Number" class="no" required>
+            <input type="text" name="fname" placeholder="Email Subject" class="email" required>
+        </div>
+<textarea name="message" id="text" cols="35" rows="10" placeholder="Your Message"></textarea>
+<br>
+<br>    
+<a href="#" class="submit">
+    Send Message
+    </a>
+  </div>     
+</form>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
