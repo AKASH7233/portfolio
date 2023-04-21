@@ -29,6 +29,9 @@ border-radius: 20px;
 text-align: center;
 
 }
+.rightcontent{
+margin-right:10px;
+}
 .leftcontent:hover , .rightcontent:hover , .centercontent:hover{
     box-shadow: 0 0 4px aqua;
     transform: scale(1.01);
