@@ -17,6 +17,7 @@
 .content{
     margin-left:40px;
     display: flex;
+    Justify-content: space-between;
    
 }
 .leftcontent, .rightcontent, .centercontent{
