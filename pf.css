@@ -194,7 +194,8 @@ img ,img{
             width: 170px;
             
         }
-       
+        .main {
+            margin-left: -30px;
         .Download{
             font-size: 15px;
         }
