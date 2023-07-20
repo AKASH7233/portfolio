@@ -46,6 +46,11 @@ font-weight: 500;
     body{
         height:500vh ;
     }
+    img{
+        margin-top: 60px;
+        width:40vw;
+        height:45vw;
+    }
 .main , section,.contact, .skills{
     height:100vh;
 }
@@ -57,7 +62,7 @@ font-weight: 500;
 }
     .content{
     display: block;
-    margin-left: 5px;
+    margin-left: 10px;
     
 }
 }
