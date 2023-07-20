@@ -69,8 +69,7 @@ a.submit{
 
 @media screen and (max-width:550px){
     form{
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10px;
     }
     input{
         width:100%;
